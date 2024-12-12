@@ -1,0 +1,67 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 20px;
+  background-color: #EDF6F9; /* สีพื้นหลังอ่อน */
+  color: #023047; /* สีข้อความหลัก */
+}
+
+.container {
+  border: 3px solid #a88ee6; /* สีขอบ */
+  border-radius: 15px;
+  padding: 20px;
+  display: inline-block;
+  background-color: #ADE8F4; /* สีพื้นหลังกล่อง */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.numbers, .operations {
+  margin: 15px 0;
+}
+
+.numbers input, .operations button {
+  width: 60px;
+  height: 50px;
+  margin: 8px;
+  font-size: 18px;
+  text-align: center;
+  border: 2px solid #699cdf; /* สีขอบปุ่ม */
+  border-radius: 10px;
+  background-color: #CAF0F8; /* สีพื้นหลังปุ่ม */
+  color: #023047; /* สีข้อความ */
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.numbers input:focus, .operations button:hover {
+  background-color: #a1c7f3; /* สีเมื่อโฮเวอร์ */
+  transform: scale(1.1);
+}
+
+#solution {
+  margin: 15px 0;
+  width: 80%;
+  height: 40px;
+  font-size: 18px;
+  text-align: center;
+  border: 2px solid #8ECAE6; /* สีขอบช่อง Solution */
+  border-radius: 10px;
+  background-color: #E0FBFC; /* สีพื้นหลังช่อง Solution */
+  color: #023047;
+}
+
+#submit, #reset {
+  padding: 12px 25px;
+  font-size: 18px;
+  background-color: #9a9be7; /* สีปุ่ม */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.2s;
+}
+
+#submit:hover, #reset:hover {
+  background-color: #48CAE4; /* สีเมื่อโฮเวอร์ */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
