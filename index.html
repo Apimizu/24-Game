@@ -5,27 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>เกม 24</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
+    <h1 class="title">เกม 24</h1>
     <div class="numbers">
       <input type="text" id="num1" placeholder="num" readonly>
       <input type="text" id="num2" placeholder="num" readonly>
       <input type="text" id="num3" placeholder="num" readonly>
       <input type="text" id="num4" placeholder="num" readonly>
-      <span class="answer">
-        <h1>= 24</h1>
-      </span>
+    </div>
+    <div class="answer">
+      <h1>= 24</h1>
     </div>
     <div class="operations">
       <button>+</button>
       <button>-</button>
       <button>&times;</button>
       <button>&divide;</button>
+      <button>(</button>
+      <button>)</button>
     </div>
     <input type="text" id="solution" placeholder="Solution">
-    <button id="submit">Submit</button>
-    <button id="reset">Reset</button>
+    <div class="controls">
+      <button id="submit">Submit</button>
+      <button id="delete">Delete</button>
+      <button id="reset">Reset</button>
+    </div>
   </div>
   <script src="gameSystem.js"></script>
 </body>
