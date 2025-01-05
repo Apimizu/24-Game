@@ -5,6 +5,7 @@ const numbers = document.querySelectorAll('.numbers input'); // เลือก�
 const answer = document.querySelectorAll('.answer'); // แสดงข้อความ "= 24" ที่หน้าจอ
 const submitButton = document.getElementById('submit'); // ปุ่มสำหรับตรวจสอบคำตอบ
 const resetButton = document.getElementById('reset'); // ปุ่มสำหรับเริ่มเกมใหม่
+const deleteButton = document.getElementById('delete')//ปุ่มdelete
 
 // ฟังก์ชันตรวจสอบว่าตัวเลขที่สุ่มมานั้นสามารถคำนวณให้ได้ผลลัพธ์เป็น 24 ได้ไหม
 function isSolvable(numbers) {
@@ -92,9 +93,12 @@ function resetGame() {
   generateNumbers(); // สุ่มตัวเลขใหม่
 }
 
+function deleteSolution(){
+  solutionInput.value = '';
+}
 // เพิ่ม event listener ให้กับปุ่ม Submit และ Reset
 submitButton.addEventListener('click', evaluateSolution); // ตรวจสอบคำตอบเมื่อคลิกปุ่ม Submit
 resetButton.addEventListener('click', resetGame); // เริ่มเกมใหม่เมื่อคลิกปุ่ม Reset
-
+deleteButton.addEventListener('click', deleteSolution);
 // เริ่มต้นเกมโดยสุ่มตัวเลขครั้งแรก
 generateNumbers();
