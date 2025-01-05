@@ -1,89 +1,78 @@
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
-  margin: 20px;
-  background-color: #EDF6F9; /* สีพื้นหลังอ่อน */
-  color: #023047; /* สีข้อความหลัก */
-}
-
-.container {
-  border: 3px solid #a88ee6; /* สีขอบ */
-  border-radius: 15px;
-  padding: 20px;
-  display: inline-block;
-  background-color: #ADE8F4; /* สีพื้นหลังกล่อง */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.container {
-      text-align: center;
-      margin-top: 50px;
-    }
-    .numbers, .operations {
-      margin: 20px 0;
-    }
-    input {
-      width: 60px;
-      text-align: center;
-      margin: 5px;
-    }
-    button {
-      margin: 5px;
-      padding: 10px 15px;
-    }
-
-.numbers {
+  margin: 0;
+  padding: 0;
+  background: #b7e0ff;
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.numbers, .operations {
-  margin: 15px 0;
+.container {
+  border: 3px solid #e78f81;
+  border-radius: 15px;
+  padding: 30px;
+  background-color: #fff5cd;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
 }
 
-.numbers input, .operations button {
+.title {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #e78f81;
+}
+
+.numbers, .operations, .controls {
+  margin: 20px 0;
+}
+
+input[type="text"] {
   width: 60px;
-  height: 50px;
-  margin: 8px;
-  font-size: 18px;
+  height: 60px;
   text-align: center;
-  border: 2px solid #699cdf; /* สีขอบปุ่ม */
+  font-size: 24px;
+  margin: 5px;
+  border: none;
   border-radius: 10px;
-  background-color: #CAF0F8; /* สีพื้นหลังปุ่ม */
-  color: #023047; /* สีข้อความ */
+  background-color: #ffcfb3;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.operations button, .controls button {
+  width: 90px;
+  height: 60px;
+  font-size: 24px;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+  background-color: #e78f81;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s, transform 0.2s;
 }
 
-.numbers input:focus, .operations button:hover {
-  background-color: #a1c7f3; /* สีเมื่อโฮเวอร์ */
-  transform: scale(1.1);
+.operations button:hover, .controls button:hover {
+  background-color: #ffcfb3;
+  transform: translateY(-2px);
 }
 
 #solution {
-  margin: 15px 0;
-  width: 80%;
-  height: 40px;
+  width: calc(100% - 20px);
+  height: 50px;
   font-size: 18px;
   text-align: center;
-  border: 2px solid #8ECAE6; /* สีขอบช่อง Solution */
+  margin: 10px 0;
+  border: 2px solid #e78f81;
   border-radius: 10px;
-  background-color: #E0FBFC; /* สีพื้นหลังช่อง Solution */
-  color: #023047;
+  background-color: #fff5cd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-#submit, #reset {
-  padding: 12px 25px;
-  font-size: 18px;
-  background-color: #9a9be7; /* สีปุ่ม */
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s, box-shadow 0.2s;
-}
-
-#submit:hover, #reset:hover {
-  background-color: #48CAE4; /* สีเมื่อโฮเวอร์ */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+.controls {
+  display: flex;
+  justify-content: space-between;
 }
